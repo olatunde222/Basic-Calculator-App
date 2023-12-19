@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400;1,500&display=swap");
+
+/* Basic styling for the calculator */
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 450px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+.text-input {
+  display: flex;
+  width: 100%;
+}
+
+.text-input > input {
+  border: none;
+  align-items: end;
+  background: none;
+}
+
+.text-input > input::placeholder {
+  font-size: 30px !important;
+  text-align: end;
+}
+input[type="text"] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 30px;
+  text-align: end;
+  font-weight: bold;
+}
+input[type="button"] {
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.292);
+  border-radius: 5px;
+  background: #fff;
+  padding: 22px;
+  margin: 1px 1%;
+  font-size: 16px;
+}
+input[type="button"]:hover{
+    background: rgba(0, 0, 0, 0.066)
+}
+
+input[type="button"]:nth-child(24){
+    background: #0c73cdc4;
+}
+
+.cal-abvs {
+  display: flex;
+  gap: 2rem;
+}
+
+.cal-abvs > span {
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.cal-abvs > span:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.066);
+}
